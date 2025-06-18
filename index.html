@@ -29,22 +29,26 @@
     header img {
       width: 160px;
       border-radius: 20px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      box-shadow: 0 0 15px black;
     }
     h1 {
       margin-top: 20px;
       font-size: 1.5em;
+      padding-top:10px;
+      padding-bottom:10px;
+      background-color: black;
+      border-radius: 10px;
       text-shadow: 0px 2px 10px white;
+      box-shadow: 0px 0px 10px orange
     }
     h6 {
-      font-size: 1.2em;
+      font-size: 1em;
       color: gray;
       text-shadow: 0px 0px 2px black;
     }
     p {
       font-size: 1.2em;
       margin-bottom: 30px;
-      text-shadow: 0px 0px 3px white;
     }
     .button {
       display: inline-block;
@@ -56,11 +60,13 @@
       text-decoration: none;
       border-radius: 10px;
       font-weight: bold;
-      transition: transform 0.15s;
+      border: 1px dashed brown;
+      transition: transform 0.5s;
       box-shadow: 0 0 15px brown;
     }
     .button:hover {
       transform: scale(1.3);
+      background: orange;
     }
     .orange {
       font-size: 1.2em;
@@ -68,16 +74,40 @@
       font-weight: bold;
       color: orange;
       text-shadow: 2px 0px 2px brown;
+      transition: transform 1s;
+    }
+    .orange:hover{
+      transform : scaleY(0);
+    }
+    .scale-x{
+      transition: transform 0.5s;
+    }
+    .scale-x:hover {
+      transform: scaleX(0);
+    }
+    .scale {
+      transition: transform 0.5s;
+    }
+    .scale:hover {
+      transform: scale(1.50);
+      box-shadow: 0 0 15px gray;
+    }
+    .translate{
+       transition: transform 3s; 
+    }
+    .translate:hover{
+      transform: translateY(-650px);
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://cdn.imgurl.ir/uploads/u707511_Picsart_24-09-11_16-02-27-624.jpg" alt="MinerHub Logo" />
-    <h1>steven750MC</h1>
+    <br>
+    <img class="scale" src="https://cdn.imgurl.ir/uploads/u707511_Picsart_24-09-11_16-02-27-624.jpg" alt="MinerHub Logo" />
+    <h1 class="scale">‌steven750MC</h1>
     <a href="https://splus.ir/steven_real" class="button" target="_blank">آیدی سروش پلاس</a> <a href="https://steven750MC.github.io/MinerHubWeb" class="button" target="_blank">دانلود اپلیکیشن من</a> 
     <p class="orange">سلام من استیون هستم، برنامه نویس اندروید با زبان کاتلین و جتپک کامپوز، کمی پایتون و وب. سعی میکنم با برنامه نویسی و ادیتم به دیگران کمک کنم</p>
-    <h6>اکثر اوقات توی سروش آنلاینم، میتونید هر چیزی خواستید رو به پیوی سروشم بگین</h6>
+    <h6 class="translate">اکثر اوقات توی سروش آنلاینم، میتونید هر چیزی خواستید رو به پیوی سروشم بگین</h6>
     </header>
 </body>
 </html> 
