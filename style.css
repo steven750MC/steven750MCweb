@@ -72,16 +72,18 @@
       transform : scale(1.10);
     }
     .box{
+        opacity: 0;
         background: orange;
         color: black;
         border-radius: 20px;
         box-shadow: 0px 5px 10px orange;
         text-shadow: 0px 1px 1px;
         text-align: center;
-        transition: all 1s ease;
+        transition: all 5s ease;
         margin: 20px;
         margin-top: 50px;
         padding: 20px;
+              transform: perspective(400px) translateY(100px) rotateX(180deg) scale(0);
     }
     .box:hover{
         color: orange;
@@ -92,7 +94,10 @@
         border-radius: 10px;
         border: 1px dashed orange;
     }
-    
+    .box.show {
+	  opacity: 1;
+      transform: perspective(400px) translateY(10px) rotateX(0deg) scale(1);
+	}
     .scale-x{
       transition: transform 0.5s;
     }
