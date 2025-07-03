@@ -28,18 +28,21 @@ body{
   font-family: 'Vazirmatn';
 }
 .container{
-  height:100vh;
-  width:100vw;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
 .card{
-  position:absolute;
-  height:440px;
-  width:300px;
-  background-color:rgba(255,255,255,0.2);
-  text-align:center;
+  height: 100vh;
+  width: 100vw;
+  border-radius: 0; /* اگه گوشه‌ها هم بخوای نرمه باشه، نگه دارش */
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  position: relative; /* بهتره دیگه absolute نباشه */
   border-radius:5px;
 }
 .name{
