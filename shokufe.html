@@ -20,7 +20,12 @@
   margin:0;
   padding:0;
 }
-body{
+  html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 300px;
+  height: 440px;
   background-color:#000;
   background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp_7VaQfDBi0gX_cCa8-A5_nDDC5c3JNoICXdXKfsdN7eiK4gfJakhlykU&s=10");
   background-size:100% 100%;
@@ -28,21 +33,17 @@ body{
   font-family: 'Vazirmatn';
 }
 .container{
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
+ 
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 .card{
-  height: 100vh;
-  width: 100vw;
-  border-radius: 0; /* اگه گوشه‌ها هم بخوای نرمه باشه، نگه دارش */
-  background-color: rgba(255, 255, 255, 0.2);
-  text-align: center;
-  position: relative; /* بهتره دیگه absolute نباشه */
+  position:absolute;
+  height:440px;
+  width:300px;
+  background-color:rgba(255,255,255,0.2);
+  text-align:center;
   border-radius:5px;
 }
 .name{
