@@ -13,7 +13,7 @@ elements.forEach(el => {
 });
 
 
-const text = "steven750MC";
+const text = "steven750MC ";
 let i = 0;
 
 function type() {
