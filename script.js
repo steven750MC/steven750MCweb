@@ -1,4 +1,4 @@
-const boxes = document.querySelectorAll('.box');
+const elements = document.querySelectorAll('body, .title, .box, .orange, .button');
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -8,17 +8,19 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-boxes.forEach(box => {
-  observer.observe(box);
+elements.forEach(el => {
+  observer.observe(el);
 });
-const text = "سلام من استیون هستم، برنامه نویس اندروید با زبان کاتلین و جتپک کامپوز، کمی پایتون و وب. سعی میکنم با برنامه نویسی و ادیتم به دیگران کمک کنم";
+
+
+const text = "steven750MC";
 let i = 0;
 
 function type() {
   if (i < text.length) {
-    document.getElementById("bio").innerHTML += text.charAt(i);
+    document.getElementById("title").innerHTML += text.charAt(i);
     i++;
-    setTimeout(type, 75);
+    setTimeout(type, 150);
   }
 }
 
